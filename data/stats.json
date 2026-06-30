@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T19:49:56Z",
+  "generated_at": "2026-06-30T19:55:54Z",
   "duration_seconds": 72.1,
   "companies_total": 2078,
   "companies_by_source": {
@@ -15,25 +15,24 @@
   "fetched_ok": 1970,
   "fetch_errors": 108,
   "fetch_success_rate": 0.948,
-  "roles_matched": 99,
+  "roles_matched": 41,
   "roles_by_source": {
-    "ashby": 18,
-    "lever": 10,
-    "amazon": 24,
-    "workday": 19,
-    "smartrecruiters": 4,
-    "greenhouse": 24
+    "ashby": 7,
+    "amazon": 5,
+    "workday": 7,
+    "lever": 6,
+    "smartrecruiters": 1,
+    "greenhouse": 15
   },
   "roles_by_cycle": {
-    "Fall 2026": 86,
-    "Summer 2027": 13
+    "Fall 2026": 35,
+    "Summer 2027": 6
   },
   "roles_by_region": {
-    "US": 41,
-    "International": 58
+    "US": 41
   },
-  "new_this_run": 58,
-  "open_total": 99,
+  "new_this_run": 0,
+  "open_total": 41,
   "detection_latency": {
     "median_minutes": 3500.5,
     "sample_size": 7,

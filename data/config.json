@@ -5,7 +5,7 @@
   "max_age_days": 270,
   "max_per_company": 3,
   "allowlist_only": false,
-  "include_international": true,
+  "include_international": false,
   "section_limits": {
     "Summer 2027": 100,
     "Fall 2026": 40
