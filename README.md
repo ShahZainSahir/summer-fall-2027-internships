@@ -1,8 +1,8 @@
 # Summer 2027/Fall 2026 Tech Internships
 
-A self-updating engine that tracks tech internships so you don't have to. Instead of refreshing a dozen career pages by hand, it reads company hiring feeds directly and keeps one live list — newest roles on top, refreshed automatically throughout the day.
+A self-updating engine that tracks tech internships so you don't have to. Instead of refreshing a dozen career pages by hand, it reads company hiring feeds directly and keeps one live list, newest roles on top, refreshed automatically throughout the day.
 
-**35 open roles · 1282 companies tracked · updated Jun 30, 2026 at 16:25 UTC**
+**38 open roles · 1299 companies tracked · updated Jun 30, 2026 at 17:50 UTC**
 
 **⭐Star this repo⭐** to save it and get updates when new roles are added.
 
@@ -29,7 +29,7 @@ I'm building this in the open and adding to it as it grows. Coming soon: **SMS/e
 - Roles are grouped by cycle below - **newest posting on top, oldest at the bottom.**
 - The **Posted** column is the date the company published the role.
 - Track your applications with [`data/internships.csv`](data/internships.csv) (opens in Excel / Google Sheets).
-- Missing a company? Adding one takes a single line — see [CONTRIBUTING.md](CONTRIBUTING.md).
+- Missing a company? Adding one takes a single line, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
@@ -44,7 +44,7 @@ I'm building this in the open and adding to it as it grows. Coming soon: **SMS/e
 | Walleye Capital | Quantic – Quantitative Developer Intern (Summer 2027) | Quant | Boston, MA | — | [Apply](https://job-boards.greenhouse.io/walleyecapital-external-students/jobs/4679168006) |
 | Walleye Capital | Volatility Trading Developer Intern (Summer 2027) | Quant | New York, New York | — | [Apply](https://job-boards.greenhouse.io/walleyecapital-external-students/jobs/4679434006) |
 
-## Fall 2026  (29 open)
+## Fall 2026  (32 open)
 
 | Company | Role | Category | Location | Posted | Apply |
 |---|---|---|---|---|---|
@@ -58,12 +58,15 @@ I'm building this in the open and adding to it as it grows. Coming soon: **SMS/e
 | 1Password | Developer Intern, Trust Platforms - Fall 2026 | Software | Remote (United States / Canada) | Jun 09, 2026 | [Apply](https://jobs.ashbyhq.com/1password/8f8774dc-e400-48b1-8100-c6840b8eaed1) |
 | Skydio | Middleware Software Engineer Intern - Fall 2026 | Software | San Mateo, California, United States | May 21, 2026 | [Apply](https://jobs.ashbyhq.com/skydio/7d9dbb60-4ca1-4ba8-8bae-5ebfded4a915) |
 | Saronic | Software Engineer Intern (Fall 2026) | Software | Austin, TX | May 18, 2026 | [Apply](https://jobs.ashbyhq.com/saronic/1c74957f-0895-415b-9324-08b0994747d7) |
+| Amazon | Software Development Engineer Intern, AWS Data Services - Fall 2026 (US) | Data & ML/AI | Seattle, Washington, USA | May 06, 2026 | [Apply](https://www.amazon.jobs/en/jobs/10412530/software-development-engineer-intern-aws-data-services-fall-2026-us) |
 | Skydio | Software Engineer Intern Fall 2026/Winter 2027 | Software | San Mateo, California, United States | May 05, 2026 | [Apply](https://jobs.ashbyhq.com/skydio/f6320e9b-4eed-408d-8d37-d509fb0406ee) |
 | Hermeus | Software Engineering Intern (HIL) - Fall 2026 | Software | Atlanta, GA | Apr 17, 2026 | [Apply](https://jobs.lever.co/hermeus/10d69ef6-a754-42ab-833c-76adf01367bf) |
 | Hermeus | Software Engineering Intern (Modeling & Simulation) - Fall 2026 | Software | Los Angeles, CA | Apr 17, 2026 | [Apply](https://jobs.lever.co/hermeus/49f7cf3f-bf66-44ca-bf97-ee0f7180a68d) |
 | Notion | Software Engineer Intern (Fall 2026) | Software | San Francisco, California | Apr 06, 2026 | [Apply](https://jobs.ashbyhq.com/notion/5b15697c-fa91-4511-9482-c98a6ff29f90) |
 | Hermeus | Software Engineering Intern (HMI) - Fall 2026 | Software | Atlanta, GA | Apr 01, 2026 | [Apply](https://jobs.lever.co/hermeus/a3a1f0ea-6a4f-42e5-81c8-3b34dac22a67) |
 | Center for AI Safety | Research Engineer Intern (Fall 2026) | Software | San Francisco, CA | Mar 05, 2026 | [Apply](https://jobs.lever.co/aisafety/e011814b-9a80-43d6-bb0c-cc153ea4bec4) |
+| Amazon | Robotics - Software Development Engineer Intern/Co-op - 2026 | Hardware | Westboro, Wisconsin, USA | Dec 03, 2025 | [Apply](https://www.amazon.jobs/en/jobs/3136266/robotics-software-development-engineer-intern-co-op-2026) |
+| Amazon | Amazon Industrial Robotics - Applied Scientist II Intern / Co-op - 2026, Amazon Industrial Robotics | Data & ML/AI | North Reading, Massachusetts, USA | Nov 25, 2025 | [Apply](https://www.amazon.jobs/en/jobs/3132414/amazon-industrial-robotics-applied-scientist-ii-intern-co-op-2026-amazon-industrial-robotics) |
 | NVIDIA | Quantum Error Correction Research Scientist Intern - Fall 2026 | Data & ML/AI | US, CA, Remote | — | [Apply](https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Quantum-Error-Correction-Research-Scientist-Intern---Fall-2026_JR2018628) |
 | NVIDIA | Quantum Research Scientist Intern - Fall 2026 | Data & ML/AI | US, CA, Remote | — | [Apply](https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Quantum-Research-Scientist-Intern---Fall-2026_JR2018244) |
 | NVIDIA | Software Engineering Intern, JAX - Fall 2026 | Software | US, CA, Santa Clara | — | [Apply](https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Software-Engineering-Intern--JAX---Fall-2026_JR2009745) |
@@ -84,14 +87,14 @@ I'm building this in the open and adding to it as it grows. Coming soon: **SMS/e
 
 A small Python engine reads public company hiring feeds directly, keeps the roles that match the scope above, de-duplicates across sources, records each role's published date once (so it never shifts), and regenerates this page through GitHub Actions. It polls every company concurrently (async) with retry/backoff and per-host rate limits. The full source is in this repo.
 
-_Engine (last run): 1,282 companies across 5 ATS platforms · 95% fetch success · completed in 25.6s._
+_Engine (last run): 1,299 companies across 7 ATS platforms · 95% fetch success · completed in 29.5s._
 
 ## Contributing
 
-Adding a company takes one line — see [CONTRIBUTING.md](CONTRIBUTING.md). Suggestions and pull requests are welcome.
+Adding a company takes one line, see [CONTRIBUTING.md](CONTRIBUTING.md). Suggestions and pull requests are welcome.
 
 ## Note on dates
 
-The **Posted** column shows when a role was published, with the newest at the top. I pull the posting date straight from each job portal — but a lot of them (Greenhouse and many smaller career sites) don't expose one publicly, so those rows show a dash (—) for now instead of a guessed date. Portals that do publish dates (Lever, Ashby, SmartRecruiters) are dated. Know the real date for a dashed role? Open a PR and I'll merge it.
+The **Posted** column shows when a role was published, with the newest at the top. I pull the posting date straight from each job portal, but a lot of them don't expose one publicly, so those rows show a dash (—) for now instead of a guessed date. The ones that do publish a date are dated. Know the real date for a dashed role? Open a PR and I'll merge it.
 
-Roles can close at any time — always confirm on the company's own site before applying.
+Roles can close at any time, so always confirm on the company's own site before applying.

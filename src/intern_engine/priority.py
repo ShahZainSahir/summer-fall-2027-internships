@@ -10,6 +10,8 @@ from __future__ import annotations
 
 # Roughly ordered by how sought-after they are for SWE/ML interns.
 TOP_COMPANIES = [
+    "amazon", "google", "microsoft", "apple", "meta", "nvidia", "salesforce",
+    "jpmorgan", "goldman", "morgan stanley", "capital one",
     "openai", "anthropic", "stripe", "databricks", "palantir", "scale ai",
     "ramp", "plaid", "coinbase", "robinhood", "airbnb", "dropbox", "notion",
     "figma", "snowflake", "datadog", "mongodb", "cloudflare", "pinterest",
@@ -31,7 +33,7 @@ TOP_COMPANIES = [
 ]
 
 _RANK = {name: i for i, name in enumerate(TOP_COMPANIES)}
-_UNRANKED = 10_000
+UNRANKED = 10_000
 
 
 def rank(company: str) -> int:
@@ -42,4 +44,4 @@ def rank(company: str) -> int:
     for name, i in _RANK.items():
         if name in c:  # e.g. "Stripe, Inc." contains "stripe"
             return i
-    return _UNRANKED
+    return UNRANKED

@@ -113,21 +113,20 @@ def _header(cfg: dict, total_open: int, companies: int) -> list[str]:
         "",
         "A self-updating engine that tracks tech internships so you don't have to. "
         "Instead of refreshing a dozen career pages by hand, it reads company hiring "
-        "feeds directly and keeps one live list — newest roles on top, refreshed "
+        "feeds directly and keeps one live list, newest roles on top, refreshed "
         "automatically throughout the day.",
         "",
         f"**{total_open} open roles · {companies} companies tracked · "
         f"updated {_now_str()}**",
         "",
-        "**Star this repo** to save it and get updates when new roles are added.",
+        "**⭐Star this repo⭐** to save it and get updates when new roles are added.",
         "",
         "## What this is",
         "",
-        "This is an engine, not a hand-kept list. It polls company career feeds "
-        "(Greenhouse, Lever, Ashby, SmartRecruiters, Workday) several times a day, finds "
-        "the internships, removes duplicates, and rebuilds this page on its own. Every link comes "
-        "straight from the source, so it's real and current — not a stale list "
-        "someone forgot to update.",
+        "This is an engine, not a hand-kept list. It polls company career feeds several "
+        "times a day, finds the internships, removes duplicates, and rebuilds this page "
+        "on its own. Every link comes straight from the source, so it's real and "
+        "current, not a stale list someone forgot to update (speed matters).",
         "",
         "## Scope",
         "",
@@ -140,7 +139,7 @@ def _header(cfg: dict, total_open: int, companies: int) -> list[str]:
         "",
         "I'm a US-based international student studying in the United States, so I "
         "built this for the search I'm doing myself. It's US-only for now. Use it to "
-        "spot roles early and apply before they fill up — being first genuinely helps.",
+        "spot roles early and apply before they fill up - being first genuinely helps.",
         "",
         "## Where this is going",
         "",
@@ -151,11 +150,11 @@ def _header(cfg: dict, total_open: int, companies: int) -> list[str]:
         "",
         "## How to use",
         "",
-        "- Roles are grouped by cycle below — **newest posting on top, oldest at the bottom.**",
+        "- Roles are grouped by cycle below - **newest posting on top, oldest at the bottom.**",
         "- The **Posted** column is the date the company published the role.",
         "- Track your applications with [`data/internships.csv`](data/internships.csv) "
         "(opens in Excel / Google Sheets).",
-        "- Missing a company? Adding one takes a single line — see "
+        "- Missing a company? Adding one takes a single line, see "
         "[CONTRIBUTING.md](CONTRIBUTING.md).",
         "",
         "---",
@@ -179,19 +178,18 @@ def _footer() -> list[str]:
         "",
         "## Contributing",
         "",
-        "Adding a company takes one line — see [CONTRIBUTING.md](CONTRIBUTING.md). "
+        "Adding a company takes one line, see [CONTRIBUTING.md](CONTRIBUTING.md). "
         "Suggestions and pull requests are welcome.",
         "",
         "## Note on dates",
         "",
         "The **Posted** column shows when a role was published, with the newest at the "
-        "top. I pull the posting date straight from each job portal — but a lot of them "
-        "(Greenhouse and many smaller career sites) don't expose one publicly, so those "
-        "rows show a dash (—) for now instead of a guessed date. Portals that do publish "
-        "dates (Lever, Ashby, SmartRecruiters) are dated. Know the real date for a "
-        "dashed role? Open a PR and I'll merge it.",
+        "top. I pull the posting date straight from each job portal, but a lot of them "
+        "don't expose one publicly, so those rows show a dash (—) for now instead of a "
+        "guessed date. The ones that do publish a date are dated. Know the real date for "
+        "a dashed role? Open a PR and I'll merge it.",
         "",
-        "Roles can close at any time — always confirm on the company's own site before "
+        "Roles can close at any time, so always confirm on the company's own site before "
         "applying.",
         "",
     ]
@@ -255,7 +253,7 @@ def generate(store_data: dict) -> dict:
 
     if not displayed:
         lines.append(
-            "_No matching roles right now — the list fills as companies post. "
+            "_No matching roles right now, the list fills as companies post. "
             "Star it and check back._"
         )
         lines.append("")

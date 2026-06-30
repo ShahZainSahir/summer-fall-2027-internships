@@ -41,6 +41,9 @@ _WD_RE = re.compile(
     re.I,
 )
 
+# Oracle Recruiting Cloud host (per-tenant).
+_ORC_RE = re.compile(r"https://([\w.-]+\.oraclecloud\.com)", re.I)
+
 # Workday hosts thousands of mostly non-tech enterprises, so we only keep the
 # tech / finance / fintech names students actually want (matched in the name).
 _WD_DESIRABLE = {
@@ -144,12 +147,31 @@ def _extract_workday(listings: list) -> dict:
     return found
 
 
+def _extract_oracle(listings: list) -> dict:
+    """{host: {name, host}} for desirable Oracle Recruiting Cloud tenants."""
+    found: dict[str, dict] = {}
+    for item in listings:
+        if not isinstance(item, dict):
+            continue
+        name = (item.get("company_name") or "").strip()
+        if not _is_desirable_workday(name):
+            continue
+        blob = " ".join(str(item.get(k, "")) for k in ("url", "company_url"))
+        m = _ORC_RE.search(blob)
+        if not m:
+            continue
+        host = m.group(1).lower()
+        found.setdefault(host, {"name": name or host, "host": host})
+    return found
+
+
 def discover() -> tuple[list[dict], int]:
     session = requests.Session()
     session.headers.update({"User-Agent": "intern-engine/1.0 (+github.com/intern-engine)"})
 
     simple: dict[tuple[str, str], str] = {}
     wd: dict[tuple[str, str], dict] = {}
+    orc: dict[str, dict] = {}
     for url in PUBLIC_SOURCES:
         try:
             resp = session.get(url, timeout=30)
@@ -159,6 +181,7 @@ def discover() -> tuple[list[dict], int]:
                 data = data.get("listings") or list(data.values())
             simple.update(_extract_simple(data))
             wd.update(_extract_workday(data))
+            orc.update(_extract_oracle(data))
         except (requests.RequestException, ValueError) as exc:
             print(f"  source failed: {url} ({exc})")
 
@@ -179,9 +202,16 @@ def discover() -> tuple[list[dict], int]:
             "name": info["name"], "slug": info["tenant"], "ats": "workday",
             "wd": info["wd"], "site": info["site"],
         })
+    for host, info in orc.items():
+        merged.setdefault(("oracle", host), {
+            "name": info["name"], "slug": host, "ats": "oracle",
+            "host": host, "site": "CX_1",
+        })
+    # Amazon is one fixed search endpoint, not discovered per-URL.
+    merged.setdefault(("amazon", "amazon"), {"name": "Amazon", "slug": "amazon", "ats": "amazon"})
 
     companies = sorted(merged.values(), key=lambda c: c["name"].lower())
     with open(paths.COMPANIES_PATH, "w", encoding="utf-8") as f:
         json.dump(companies, f, indent=2, ensure_ascii=False)
 
-    return companies, len(simple) + len(wd)
+    return companies, len(simple) + len(wd) + len(orc) + 1

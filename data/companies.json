@@ -265,6 +265,13 @@
     "ats": "smartrecruiters"
   },
   {
+    "name": "Akamai Technologies",
+    "slug": "fa-extu-saasfaprod1.fa.ocs.oraclecloud.com",
+    "ats": "oracle",
+    "host": "fa-extu-saasfaprod1.fa.ocs.oraclecloud.com",
+    "site": "CX_1"
+  },
+  {
     "name": "Akuna Capital",
     "slug": "akunacapital",
     "ats": "greenhouse"
@@ -348,6 +355,11 @@
     "name": "AMAROK Security",
     "slug": "amarok",
     "ats": "greenhouse"
+  },
+  {
+    "name": "Amazon",
+    "slug": "amazon",
+    "ats": "amazon"
   },
   {
     "name": "American Fidelity",
@@ -929,6 +941,13 @@
     "site": "Campus"
   },
   {
+    "name": "BNY",
+    "slug": "eofe.fa.us2.oraclecloud.com",
+    "ats": "oracle",
+    "host": "eofe.fa.us2.oraclecloud.com",
+    "site": "CX_1"
+  },
+  {
     "name": "Booz Allen",
     "slug": "bah",
     "ats": "workday",
@@ -1216,6 +1235,13 @@
     "ats": "workday",
     "wd": "wd5",
     "site": "2"
+  },
+  {
+    "name": "Citizens Financial Group",
+    "slug": "hcgn.fa.us2.oraclecloud.com",
+    "ats": "oracle",
+    "host": "hcgn.fa.us2.oraclecloud.com",
+    "site": "CX_1"
   },
   {
     "name": "City of Philadelphia",
@@ -1540,6 +1566,13 @@
     "name": "Culture Amp",
     "slug": "cultureamp",
     "ats": "greenhouse"
+  },
+  {
+    "name": "Cummins",
+    "slug": "fa-espx-saasfaprod1.fa.ocs.oraclecloud.com",
+    "ats": "oracle",
+    "host": "fa-espx-saasfaprod1.fa.ocs.oraclecloud.com",
+    "site": "CX_1"
   },
   {
     "name": "Customer.io",
@@ -1907,6 +1940,13 @@
     "ats": "greenhouse"
   },
   {
+    "name": "Emerson Electric",
+    "slug": "hdjq.fa.us2.oraclecloud.com",
+    "ats": "oracle",
+    "host": "hdjq.fa.us2.oraclecloud.com",
+    "site": "CX_1"
+  },
+  {
     "name": "Empire State Realty Trust",
     "slug": "esrtreit",
     "ats": "lever"
@@ -2224,6 +2264,13 @@
     "ats": "greenhouse"
   },
   {
+    "name": "Ford Motor Company",
+    "slug": "efds.fa.em5.oraclecloud.com",
+    "ats": "oracle",
+    "host": "efds.fa.em5.oraclecloud.com",
+    "site": "CX_1"
+  },
+  {
     "name": "Forerunner",
     "slug": "forerunner",
     "ats": "greenhouse"
@@ -2237,6 +2284,13 @@
     "name": "Fortera",
     "slug": "forteracorporation",
     "ats": "greenhouse"
+  },
+  {
+    "name": "Fortinet",
+    "slug": "edel.fa.us2.oraclecloud.com",
+    "ats": "oracle",
+    "host": "edel.fa.us2.oraclecloud.com",
+    "site": "CX_1"
   },
   {
     "name": "Forward Networks",
@@ -2755,6 +2809,13 @@
     "ats": "greenhouse"
   },
   {
+    "name": "Honeywell",
+    "slug": "ibqbjb.fa.ocs.oraclecloud.com",
+    "ats": "oracle",
+    "host": "ibqbjb.fa.ocs.oraclecloud.com",
+    "site": "CX_1"
+  },
+  {
     "name": "Horace Mann",
     "slug": "horacemannservicecorporation",
     "ats": "greenhouse"
@@ -3102,6 +3163,13 @@
     "ats": "greenhouse"
   },
   {
+    "name": "JP Morgan Chase",
+    "slug": "jpmc.fa.oraclecloud.com",
+    "ats": "oracle",
+    "host": "jpmc.fa.oraclecloud.com",
+    "site": "CX_1"
+  },
+  {
     "name": "Jumio",
     "slug": "jumio",
     "ats": "greenhouse"
@@ -3259,6 +3327,11 @@
     "name": "Kong",
     "slug": "kong",
     "ats": "ashby"
+  },
+  {
+    "name": "KRAFTON",
+    "slug": "studiokraftonboard",
+    "ats": "greenhouse"
   },
   {
     "name": "Kroll Bond Rating Agency",
@@ -4094,6 +4167,13 @@
     "ats": "lever"
   },
   {
+    "name": "Nokia",
+    "slug": "fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com",
+    "ats": "oracle",
+    "host": "fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com",
+    "site": "CX_1"
+  },
+  {
     "name": "Nooks",
     "slug": "nooks",
     "ats": "greenhouse"
@@ -4256,6 +4336,13 @@
     "ats": "greenhouse"
   },
   {
+    "name": "onsemi",
+    "slug": "hctz.fa.us2.oraclecloud.com",
+    "ats": "oracle",
+    "host": "hctz.fa.us2.oraclecloud.com",
+    "site": "CX_1"
+  },
+  {
     "name": "Ontic",
     "slug": "ontic",
     "ats": "ashby"
@@ -4309,6 +4396,13 @@
     "name": "OpusClip",
     "slug": "opusclip",
     "ats": "ashby"
+  },
+  {
+    "name": "Oracle",
+    "slug": "eeho.fa.us2.oraclecloud.com",
+    "ats": "oracle",
+    "host": "eeho.fa.us2.oraclecloud.com",
+    "site": "CX_1"
   },
   {
     "name": "OraSure Technologies",
@@ -5800,6 +5894,20 @@
     "ats": "ashby"
   },
   {
+    "name": "Texas Instruments",
+    "slug": "ebgj.fa.us2.oraclecloud.com",
+    "ats": "oracle",
+    "host": "ebgj.fa.us2.oraclecloud.com",
+    "site": "CX_1"
+  },
+  {
+    "name": "Texas Instruments",
+    "slug": "edbz.fa.us2.oraclecloud.com",
+    "ats": "oracle",
+    "host": "edbz.fa.us2.oraclecloud.com",
+    "site": "CX_1"
+  },
+  {
     "name": "The Allen Institute for AI",
     "slug": "thealleninstitute",
     "ats": "greenhouse"
@@ -6394,6 +6502,13 @@
     "name": "Wealthsimple",
     "slug": "wealthsimple",
     "ats": "lever"
+  },
+  {
+    "name": "Weatherford",
+    "slug": "fa-exmi-saasfaprod1.fa.ocs.oraclecloud.com",
+    "ats": "oracle",
+    "host": "fa-exmi-saasfaprod1.fa.ocs.oraclecloud.com",
+    "site": "CX_1"
   },
   {
     "name": "Weaviate",

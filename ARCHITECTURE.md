@@ -60,9 +60,14 @@ data/candidates.json        (company name + slug guesses)
   "role_scope": "tech",
   "max_age_days": 270,
   "max_per_company": 3,
+  "allowlist_only": false,
   "section_limits": { "Summer 2027": 100, "Fall 2026": 40 }
 }
 ```
+
+Sources: Greenhouse, Lever, Ashby, SmartRecruiters, Workday, Oracle Recruiting
+Cloud, and Amazon. A company-level quality gate (`data/blocklist.json` plus the
+optional `allowlist_only` mode) keeps the list free of junk/no-name companies.
 
 - `cycles` — the exact cycles to show; these become the section headings, in order.
   A role is kept ONLY if its title explicitly states the year (e.g. "2027" or

@@ -12,6 +12,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 DATA_DIR = os.path.join(ROOT, "data")
 
 CONFIG_PATH = os.path.join(DATA_DIR, "config.json")          # tunable settings
+BLOCKLIST_PATH = os.path.join(DATA_DIR, "blocklist.json")    # companies to exclude
 CANDIDATES_PATH = os.path.join(DATA_DIR, "candidates.json")  # raw slugs to probe
 COMPANIES_PATH = os.path.join(DATA_DIR, "companies.json")    # validated companies
 JOBS_PATH = os.path.join(DATA_DIR, "jobs.json")              # persistent job state

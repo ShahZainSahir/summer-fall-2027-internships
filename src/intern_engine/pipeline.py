@@ -20,8 +20,16 @@ from datetime import UTC, datetime, timedelta
 
 import httpx
 
-from . import config, filters, paths, store
-from .connectors import ashby, greenhouse, lever, smartrecruiters, workday
+from . import config, filters, paths, quality, store
+from .connectors import (
+    amazon,
+    ashby,
+    greenhouse,
+    lever,
+    oracle,
+    smartrecruiters,
+    workday,
+)
 from .net import HostLimiter, Net
 
 CONNECTORS = {
@@ -30,6 +38,8 @@ CONNECTORS = {
     "ashby": ashby.fetch,
     "smartrecruiters": smartrecruiters.fetch,
     "workday": workday.fetch,
+    "amazon": amazon.fetch,
+    "oracle": oracle.fetch,
 }
 
 GLOBAL_CONCURRENCY = 32
@@ -71,7 +81,7 @@ async def _fetch_all(companies: list[dict]):
         workday_net = Net(workday_client, limiter) if workday_client else default_net
 
         async def worker(company: dict):
-            net = workday_net if company.get("ats") == "workday" else default_net
+            net = workday_net if company.get("ats") in ("workday", "oracle") else default_net
             async with gate:
                 return await _fetch_one(company, net)
 
@@ -112,6 +122,9 @@ def run_update() -> tuple[dict, dict]:
         if max_age else None
     )
 
+    blocklist = quality.load_blocklist()
+    allowlist_only = config.allowlist_only(cfg)
+
     companies = _load_companies()
     started = time.monotonic()
     results = asyncio.run(_fetch_all(companies))
@@ -124,6 +137,10 @@ def run_update() -> tuple[dict, dict]:
             errors += 1
             continue
         succeeded.add(f"{company['ats']}:{company['slug']}")
+        if quality.is_blocked(company["name"], blocklist):
+            continue
+        if allowlist_only and not quality.is_recognized(company["name"]):
+            continue
         for job in jobs:
             if not filters.is_internship(job.title):
                 continue

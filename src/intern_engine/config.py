@@ -69,3 +69,8 @@ def max_age_days(cfg: dict):
 def max_per_company(cfg: dict):
     """Max roles to show per company per section, for variety. 0/None = no limit."""
     return cfg.get("max_per_company", 0)
+
+
+def allowlist_only(cfg: dict) -> bool:
+    """When true, show only recognizable (priority-listed) companies. Off by default."""
+    return bool(cfg.get("allowlist_only", False))
