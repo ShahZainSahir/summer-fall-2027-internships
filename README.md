@@ -2,7 +2,7 @@
 
 A self-updating engine that tracks tech internships so you don't have to. Instead of refreshing a dozen career pages by hand, it reads company hiring feeds directly and keeps one live list, newest roles on top, refreshed automatically throughout the day.
 
-**38 open roles · 2078 companies tracked · updated Jun 30, 2026 at 18:14 UTC**
+**38 open roles · 2078 companies tracked · updated Jun 30, 2026 at 19:23 UTC**
 
 **⭐Star this repo⭐** to save it and get updates when new roles are added.
 
@@ -48,7 +48,7 @@ I'm building this in the open and adding to it as it grows. Coming soon: **SMS/e
 
 | Company | Role | Category | Location | Posted | Apply |
 |---|---|---|---|---|---|
-| CACI | AI/ML Engineering Co-op - Fall 2026 | Data & ML/AI | King of Prussia, PA, US | Jun 30, 2026 | [Apply](https://caci.wd1.myworkdayjobs.com/external/job/King-of-Prussia-PA-US/AI-ML-Engineering-Co-op---Fall-2026_327839) |
+| CACI | AI/ML Engineering Co-op - Fall 2026 | Data & ML/AI | King of Prussia, PA, US | Jun 30, 2026 | [Apply](https://caci.wd1.myworkdayjobs.com/external/job/King-of-Prussia-PA-US/AI-ML-Engineering-Co-op---Fall-2026_328403) |
 | 1Password | Developer Intern, Service Development - Fall 2026 | Software | Remote (United States / Canada) | Jun 23, 2026 | [Apply](https://jobs.ashbyhq.com/1password/b6b8c8ed-ff1c-4bc2-9dbe-5122207ea3a2) |
 | Intuitive Surgical | Computer Vision Engineering Intern - Fall 2026 | Data & ML/AI | Sunnyvale, CA, United States | Jun 22, 2026 | [Apply](https://jobs.smartrecruiters.com/Intuitive/744000133458290) |
 | TD Bank | 2026 Fall Co-op - Global Technology Solutions - Cyber Security | Security | Mount Laurel, New Jersey | Jun 18, 2026 | [Apply](https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/Mount-Laurel-New-Jersey/XMLNAME-2026-Fall-Co-op---Global-Technology---Solutions---Cyber-Security_R_1495397) |
@@ -87,7 +87,7 @@ I'm building this in the open and adding to it as it grows. Coming soon: **SMS/e
 
 A small Python engine reads public company hiring feeds directly, keeps the roles that match the scope above, de-duplicates across sources, records each role's published date once (so it never shifts), and regenerates this page through GitHub Actions. It polls every company concurrently (async) with retry/backoff and per-host rate limits. The full source is in this repo.
 
-_Engine (last run): 2,078 companies across 8 ATS platforms · 94% fetch success · completed in 88.6s._
+_Engine (last run): 2,078 companies across 8 ATS platforms · 94% fetch success · completed in 34.7s._
 
 ## Contributing
 
