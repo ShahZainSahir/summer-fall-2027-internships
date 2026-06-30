@@ -4,11 +4,11 @@ HI Everyone. This is a self-updating engine that tracks tech internships so you 
 
 **31 open roles · 1217 companies tracked · updated Jun 30, 2026 at 12:22 UTC**
 
-**⭐Star this repo** to save it and get updates when new roles are added⭐.
+**⭐Star this repo** to save it and get updates when new roles are added⭐
 
 ## What this is
 
-This is an engine, not a hand-kept list. It polls company career feeds (Greenhouse, Lever, Ashby, SmartRecruiters) several times a day, finds the internships, removes duplicates, and rebuilds this page on its own. Every link comes straight from the source, so it's real and current and not a stale hand list!!
+This is an engine, not a hand-kept list. It polls company career feeds several times a day, finds the internships, removes duplicates, and rebuilds this page on its own. Every link comes straight from the source, so it's real and current and not a stale hand list!!
 
 ## Scope
 
