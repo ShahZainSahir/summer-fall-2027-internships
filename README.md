@@ -2,7 +2,7 @@
 
 A self-updating engine that tracks tech internships so you don't have to. Instead of refreshing a dozen career pages by hand, it reads company hiring feeds directly and keeps one live list, newest roles on top, refreshed automatically throughout the day.
 
-**38 open roles · 2078 companies tracked · updated Jul 01, 2026 at 12:36 UTC**
+**36 open roles · 2078 companies tracked · updated Jul 01, 2026 at 16:29 UTC**
 
 **⭐Star this repo⭐** to save it and get updates when new roles are added.
 
@@ -33,22 +33,20 @@ I'm building this in the open and adding to it as it grows. Coming soon: **SMS/e
 
 ---
 
-## Summer 2027  (6 open)
+## Summer 2027  (5 open)
 
 | Company | Role | Category | Location | Posted | Apply |
 |---|---|---|---|---|---|
 | Ellipsis Labs | Software Engineer - 2027 Interns | Software | New York, New York | Mar 26, 2026 | [Apply](https://jobs.ashbyhq.com/ellipsislabs/02136b22-35b1-4b3d-8bef-567c3380a849) |
 | Anduril | 2027 Software Engineer Intern | Software | Atlanta +17 more | — | [Apply](https://boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007) |
-| Point72 | Summer 2027 Quantitative Developer Internship | Quant | New York | — | [Apply](https://boards.greenhouse.io/point72/jobs/7297613002?gh_jid=7297613002) |
 | Walleye Capital | Investment Data Science Intern (Summer 2027) | Data & ML/AI | New York, New York | — | [Apply](https://job-boards.greenhouse.io/walleyecapital-external-students/jobs/4676587006) |
 | Walleye Capital | Quantic – Quantitative Developer Intern (Summer 2027) | Quant | Boston, MA | — | [Apply](https://job-boards.greenhouse.io/walleyecapital-external-students/jobs/4679168006) |
 | Walleye Capital | Volatility Trading Developer Intern (Summer 2027) | Quant | New York, New York | — | [Apply](https://job-boards.greenhouse.io/walleyecapital-external-students/jobs/4679434006) |
 
-## Fall 2026  (32 open)
+## Fall 2026  (31 open)
 
 | Company | Role | Category | Location | Posted | Apply |
 |---|---|---|---|---|---|
-| CACI | AI/ML Engineering Co-op - Fall 2026 | Data & ML/AI | King of Prussia, PA, US | Jun 30, 2026 | [Apply](https://caci.wd1.myworkdayjobs.com/external/job/King-of-Prussia-PA-US/AI-ML-Engineering-Co-op---Fall-2026_328403) |
 | 1Password | Developer Intern, Service Development - Fall 2026 | Software | Remote (United States / Canada) | Jun 23, 2026 | [Apply](https://jobs.ashbyhq.com/1password/b6b8c8ed-ff1c-4bc2-9dbe-5122207ea3a2) |
 | Intuitive Surgical | Computer Vision Engineering Intern - Fall 2026 | Data & ML/AI | Sunnyvale, CA, United States | Jun 22, 2026 | [Apply](https://jobs.smartrecruiters.com/Intuitive/744000133458290) |
 | TD Bank | 2026 Fall Co-op - Global Technology Solutions - Cyber Security | Security | Mount Laurel, New Jersey | Jun 18, 2026 | [Apply](https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/Mount-Laurel-New-Jersey/XMLNAME-2026-Fall-Co-op---Global-Technology---Solutions---Cyber-Security_R_1495397) |
@@ -87,7 +85,7 @@ I'm building this in the open and adding to it as it grows. Coming soon: **SMS/e
 
 A small Python engine reads public company hiring feeds directly, keeps the roles that match the scope above, de-duplicates across sources, records each role's published date once (so it never shifts), and regenerates this page through GitHub Actions. It polls every company concurrently (async) with retry/backoff and per-host rate limits. The full source is in this repo.
 
-_Engine (last run): 2,078 companies across 8 ATS platforms · 94% fetch success · completed in 31.4s · median detection latency 3500 min._
+_Engine (last run): 2,078 companies across 8 ATS platforms · 94% fetch success · completed in 89.6s · median detection latency 3500 min._
 
 ## Contributing
 
