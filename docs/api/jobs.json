@@ -1,21 +1,21 @@
 {
- "generated_at": "2026-07-01T20:55:33Z",
+ "generated_at": "2026-07-01T23:22:53Z",
  "source": "https://github.com/zshah101/Automated-List-Of-Summer-2027-and-Fall-2026-Tech-Internships",
- "count": 49,
+ "count": 50,
  "jobs": [
   {
-   "id": "greenhouse:imc:4907430101",
-   "company": "IMC Trading",
-   "title": "Machine Learning Research Intern - Summer 2027",
-   "season": "Summer 2027",
+   "id": "workday:nvidia:/job/US-CA-Santa-Clara/Applied-Research-Intern--NLP---Fall-2026_JR2010488",
+   "company": "NVIDIA",
+   "title": "Applied Research Intern, NLP - Fall 2026",
+   "season": "Fall 2026",
    "category": "Data & ML/AI",
-   "location": "Chicago, United States",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4907430101",
-   "posted_at": "2026-07-01T13:18:38-04:00",
-   "first_seen_at": "2026-07-01T20:55:33Z",
+   "location": "US, CA, Santa Clara",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Research-Intern--NLP---Fall-2026_JR2010488",
+   "posted_at": "2026-07-01T00:00:00Z",
+   "first_seen_at": "2026-07-01T23:22:53Z",
    "sponsorship": "unknown",
    "salary": null,
-   "source": "greenhouse"
+   "source": "workday"
   },
   {
    "id": "greenhouse:imc:4823924101",
@@ -26,6 +26,20 @@
    "location": "Chicago, United States",
    "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4823924101",
    "posted_at": "2026-07-01T13:11:54-04:00",
+   "first_seen_at": "2026-07-01T20:55:33Z",
+   "sponsorship": "unknown",
+   "salary": null,
+   "source": "greenhouse"
+  },
+  {
+   "id": "greenhouse:imc:4907430101",
+   "company": "IMC Trading",
+   "title": "Machine Learning Research Intern - Summer 2027",
+   "season": "Summer 2027",
+   "category": "Data & ML/AI",
+   "location": "Chicago, United States",
+   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4907430101",
+   "posted_at": "2026-07-01T13:18:38-04:00",
    "first_seen_at": "2026-07-01T20:55:33Z",
    "sponsorship": "unknown",
    "salary": null,

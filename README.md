@@ -2,7 +2,7 @@
 
 A self-updating engine that tracks tech internships so you don't have to. Instead of refreshing a dozen career pages by hand, it reads company hiring feeds directly and keeps one live list, newest roles on top, refreshed automatically throughout the day.
 
-**46 open roles · 49 new this week · 3,541 companies tracked · updated Jul 01, 2026 at 21:15 UTC**
+**46 open roles · 50 new this week · 3,541 companies tracked · updated Jul 01, 2026 at 23:22 UTC**
 
 **⭐Star this repo⭐** to save it and get updates when new roles are added.
 
@@ -54,6 +54,7 @@ I'm building this in the open and adding to it as it grows. Coming soon: **SMS/e
 
 | Company | Role | Category | Location | Posted | Apply |
 |---|---|---|---|---|---|
+| NVIDIA | Applied Research Intern, NLP - Fall 2026 🆕 | Data & ML/AI | US, CA, Santa Clara | Jul 01, 2026 | [Apply](https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Research-Intern--NLP---Fall-2026_JR2010488) |
 | CACI | AI/ML Engineering Co-op - Fall 2026 🇺🇸 🆕 | Data & ML/AI | King of Prussia, PA, US | Jun 30, 2026 | [Apply](https://caci.wd1.myworkdayjobs.com/external/job/King-of-Prussia-PA-US/AI-ML-Engineering-Co-op---Fall-2026_328403) |
 | 1Password | Developer Intern, Service Development - Fall 2026 🆕 | Software | Remote (United States / Canada) | Jun 23, 2026 | [Apply](https://jobs.ashbyhq.com/1password/b6b8c8ed-ff1c-4bc2-9dbe-5122207ea3a2) |
 | Figure | Firmware Intern [Fall 2026] 🆕 | Hardware | San Jose, CA | Jun 22, 2026 | [Apply](https://job-boards.greenhouse.io/figureai/jobs/4691070006) |
@@ -80,7 +81,6 @@ I'm building this in the open and adding to it as it grows. Coming soon: **SMS/e
 | Gemini | Software Engineering Intern (Fall 2026) 🆕 | Software | New York, New York | May 01, 2026 | [Apply](https://boards.greenhouse.io/embed/job_app?for=gemini&token=7875125&gh_jid=7875125) |
 | Dmainc | Software Development Intern - Fall 2026 🆕 | Software | Fort Wayne, IN | Apr 27, 2026 | [Apply](https://dmainc.wd5.myworkdayjobs.com/dma/job/Fort-Wayne-IN/Software-Development-Intern_REQ460) |
 | TMEIC | Intern - Applications, AI and Machine Learning (Fall 2026) (ET26021) 🛂 🆕 | Data & ML/AI | Roanoke, Virginia, United States | Apr 24, 2026 | [Apply](https://apply.workable.com/tmeic-corporation-americas/j/FD4C9770FF/) |
-| NVIDIA | Software Engineering Intern, JAX - Fall 2026 🆕 | Software | US, CA, Santa Clara | Apr 24, 2026 | [Apply](https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Software-Engineering-Intern--JAX---Fall-2026_JR2009745) |
 | Lego | Firmware Engineering Co-Op - Fall 2026 🆕 | Hardware | United States of America | Apr 20, 2026 | [Apply](https://lego.wd103.myworkdayjobs.com/lego_executive/job/Boston-Hub/Firmware-Engineering-Intern_0000031568) |
 | Hermeus | Software Engineering Intern (HIL) - Fall 2026 🇺🇸 🆕 | Software | Atlanta, GA | Apr 17, 2026 | [Apply](https://jobs.lever.co/hermeus/10d69ef6-a754-42ab-833c-76adf01367bf) |
 | Hermeus | Software Engineering Intern (Modeling & Simulation) - Fall 2026 🇺🇸 🆕 | Software | Los Angeles, CA | Apr 17, 2026 | [Apply](https://jobs.lever.co/hermeus/49f7cf3f-bf66-44ca-bf97-ee0f7180a68d) |
@@ -110,7 +110,7 @@ I'm building this in the open and adding to it as it grows. Coming soon: **SMS/e
 
 A small Python engine reads public company hiring feeds directly, keeps the roles that match the scope above, de-duplicates across sources, records each role's published date once (so it never shifts), and regenerates this page through GitHub Actions. It polls every company concurrently (async) with retry/backoff and per-host rate limits. The full source is in this repo.
 
-_Engine (last run): 3,541 companies across 11 ATS platforms · 95% fetch success · completed in 273.1s · median detection latency 3495 min · real posted dates on 100% of open roles._
+_Engine (last run): 3,541 companies across 11 ATS platforms · 95% fetch success · completed in 269.1s · median detection latency 2449 min · real posted dates on 100% of open roles._
 
 ## Contributing
 
