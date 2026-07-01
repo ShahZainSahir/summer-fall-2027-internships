@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T04:10:38Z",
-  "duration_seconds": 25.1,
+  "generated_at": "2026-07-01T09:55:30Z",
+  "duration_seconds": 90.0,
   "companies_total": 2078,
   "companies_by_source": {
     "greenhouse": 935,
@@ -12,8 +12,8 @@
     "oracle": 20,
     "amazon": 1
   },
-  "fetched_ok": 1970,
-  "fetch_errors": 108,
+  "fetched_ok": 1969,
+  "fetch_errors": 109,
   "fetch_success_rate": 0.948,
   "roles_matched": 41,
   "roles_by_source": {
